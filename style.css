@@ -17,7 +17,7 @@ body {
   /* 3. Add accessible line-height */
   line-height: 1.5;
   /* 4. Improve text rendering */
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased; 
 }
 /* 5. Improve media defaults */
 img, picture, video, canvas, svg {
@@ -47,6 +47,124 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+
+* {
+  font-family: var(--fs-base);
+}
+body{
+  display: flex;
+  flex-direction: column;
+  gap : 2rem;
+  margin-top:10%;
+  background-color: var(--clr-paleBlue);
+  font-family:  var(--fs-base);
+  /* color: var(--clr-white); */
+  align-items: center;
+  font-size: var(--fw-regular);
+}
+.result-card {
+  display:flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin-left: 100px;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  align-items: center;
+ }
+.result-card-result {
+  justify-items:center;
+  padding : 25px;
+  text-align: center;
+  border-radius: 1.5rem;
+  width : 300px;
+  background: linear-gradient(to top, var(--gra-lightRoyalBlue), var(--gra-lightSlateBlue));
+  color: var(--clr-white);
+  height : 400px;
+}
+#circle {
+  text-align:center;
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  padding: 50px;
+  background: linear-gradient(var(--gra-lightRoyalBlue),var(--gra-lightSlateBlue));
+  margin:20px;
+}
+.result-card-summary {
+  padding: 20px;
+  background-color: var(--clr-white);
+  border-radius: 0 1.5rem 1.5rem 0;
+  width:300px;
+}
+p {
+  align-items: center;
+  color: var(--clr-lightLavender);
+}
+h1 {
+  font-size: 42px;
+  text-align: center;
+}
+h2 {
+  padding : 10px;
+}
+h3 {
+  margin-left: 10px;
+}
+.container {
+  display:grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  /* grid-template-columns: fr ; */ */
+  padding: 5px;
+}
+span {
+  display:grid ;
+  align-items: center;
+  grid-template-columns: 0.25fr 2fr 1fr;
+  border-radius: 0.5rem;
+  margin:10px;
+  height:45px;
+}
+.item1 {
+  padding: 10px;
+  background-color: hsla(0, 77%, 76%, 0.086);
+  /* opacity: 0.1; */
+}
+.re {
+  margin-left: 5px;
+  color: var(--clr-lightRed);
+}
+.item2 {
+  padding: 10px;
+  background-color: hsla(39, 96%, 72%, 0.179);
+}
+.me {
+  margin-left: 5px;
+  color: var(--clr-orangeYellow);
+}
+.item3 {
+  padding: 10px;
+  background-color: hsla(168, 89%, 71%, 0.129);
+}
+.ve {
+  margin-left: 5px;
+  color: hsla(168, 61%, 37%) ;
+}
+.item4 {
+  padding: 10px;
+  background-color: hsla(234, 85%, 63%, 0.191);
+}
+.vi {
+  margin-left: 5px;
+  color: var(--clr-cobaltBlue);
+}
+button {
+  margin:10px;
+  background-color:var( --clr-darkGrayBlue);
+  color: var(--clr-white);
+  border-radius: 20px;
+  height:45px;
+  width: 200px;
+}
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
